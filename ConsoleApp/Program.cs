@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp
 {
+    using ConsoleApp.Services;
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -11,8 +12,8 @@
     {
         static void Main(string[] args)
         {
-            var reader = new DataReader();
-            reader.ImportAndPrintData("dataa.csv");
+            string csvFilePath = @"data.csv";
+            OrquestrationService.StartOrquestration(csvFilePath);
         }
     }
 }
