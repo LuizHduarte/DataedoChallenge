@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataReader.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Services\OrquestrationService.cs" />
     <Compile Include="Services\DataTransferService.cs" />

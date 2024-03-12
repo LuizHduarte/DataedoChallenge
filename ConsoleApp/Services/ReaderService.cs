@@ -1,9 +1,6 @@
-﻿using ConsoleApp.Models;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
 
 namespace ConsoleApp.Services
 {
@@ -25,7 +22,7 @@ namespace ConsoleApp.Services
                 if (column.Count < headerSize)
                 {
                     var missingColumns = headerSize - column.Count;
-                    for(int i=0;i<missingColumns; i++) 
+                    for (int i = 0; i < missingColumns; i++)
                     {
                         line = line + ";";
                     }
